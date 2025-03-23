@@ -9,6 +9,8 @@ aureliosCarsPrice = [3000000, 3500000, 4000000]
 fordCarsPrice = [1500000, 2000000, 2500000]
 MitsubishiCarsPrice = [1200000, 1800000, 2300000]
 
+carBrands = ["Honda", "Toyota", "Aurelio", "Ford", "Mitsubishi"]
+carModels = [hondaCars, toyotaCars, aureliosCars, fordCars, MitsubishiCars]
 
 checker = 1
 
@@ -27,7 +29,9 @@ while checker == 1:
         print(" ")
         
         if carBrand >= 1 and carBrand <= 5:
-        
+            carBrandName = carBrands[carBrand - 1]
+            carModelsList = carModels[carBrand - 1]
+            
             if carBrand == 1:
                 carChosen = int(input(f"""    CHOOSE CAR MODEL (1-3)
     1. Honda City - PHP {hondaCarsPrice[0]:,}
@@ -88,7 +92,7 @@ CHOSEN PAYMENT: """))
                 priceCalculation = round(carPrice * 0.90, 2)
                 tupledPrice = f"{priceCalculation:,}"
                 print("\n<=====RECEIPT=====>")
-                print(f"Chosen your car: {carBrand} {carChosen}")
+                print(f"Chosen your car: {carBrandName} {carModelsList[carChosen - 1]}")
                 print(f"Total amount: PHP {tupledPrice}")
                 print("<=====RECEIPT=====>\n")
                 
@@ -105,7 +109,7 @@ CHOSEN PAYMENT: """))
                 monthlyPayment = round(priceCalculation / months, 2)
                 tupledMonthlyPayment = f"{monthlyPayment:,}"
                 print("\n<=====RECEIPT=====>")
-                print(f"Chosen your car: {carBrand} {carChosen}")
+                print(f"Chosen your car: {carBrandName} {carModelsList[carChosen - 1]}")
                 print(f"Total amount: PHP {tupledPrice}")
                 print(f"Monthly payment: PHP {tupledMonthlyPayment}")
                 print("<=====RECEIPT=====>\n")
