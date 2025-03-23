@@ -33,40 +33,30 @@ while checker == 1:
     2. Honda Civic
     3. Honda CRV
         CHOSEN MODEL: """))
-                if carChosen >= 1 and carChosen <= 3:
-                    pass
             elif carBrand == 2:
                 carChosen = int(input("""    CHOOSE CAR MODEL (1-3)
     1. Toyota Vios
     2. Toyota Fortuner
     3. Toyota Innova
         CHOSEN MODEL: """))
-                if carChosen >= 1 and carChosen <= 3:
-                    pass
             elif carBrand == 3:
                 carChosen = int(input("""    CHOOSE CAR MODEL (1-3)
     1. Aurelio GT
     2. Aurelio RT
     3. Aurelio XT
         CHOSEN MODEL: """))
-                if carChosen >= 1 and carChosen <= 3:
-                    pass
             elif carBrand == 4:
                 carChosen = int(input("""    CHOOSE CAR MODEL (1-3)
     1. Ford Ranger
     2. Ford Mustang
     3. Ford Explorer
         CHOSEN MODEL: """))
-                if carChosen >= 1 and carChosen <= 3:
-                    pass
             elif carBrand == 5:
                 carChosen = int(input("""    CHOOSE CAR MODEL (1-3)
     1. Mitsubishi Mirage
     2. Mitsubishi Montero
     3. Mitsubishi Strada
-        CHOSEN MODEL: """))
-                if carChosen >= 1 and carChosen <= 3:
-                    pass
+        CHOSEN MODEL: """))  
             else:
                 print("Invalid input")
                 continue
@@ -75,6 +65,10 @@ while checker == 1:
             continue
         
         print(" ")
+        
+        if carChosen <= 1 or carChosen >= 3:
+            print("Invalid input")
+            continue
         mop = int(input("""     CHOOSE MODE OF PAYMENT:
     1. Cash (10% Discount)
     2. Installment (5% Interest)
