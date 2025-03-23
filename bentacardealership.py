@@ -89,35 +89,35 @@ CHOSEN PAYMENT: """))
                 if carBrand == 1: # honda
                     print("\n<=====RECEIPT=====>")
                     print("Chosen your car: Honda " + hondaCars[carChosen - 1])
-                    priceCalculation = round(hondaCarsPrice[carChosen - 1] * 0.9, 2)
+                    priceCalculation = round(hondaCarsPrice[carChosen - 1] * 0.10, 2)
                     tupledPrice = f"{priceCalculation:,}"
                     print(f"Total amount: PHP", tupledPrice)
                     print("<=====RECEIPT=====>\n")
                 elif carBrand == 2: #toyota  
                     print("\n<=====RECEIPT=====>")
                     print("Chosen your car: Toyota " + toyotaCars[carChosen - 1])
-                    priceCalculation = round(toyotaCarsPrice[carChosen - 1] * 0.9, 2)
+                    priceCalculation = round(toyotaCarsPrice[carChosen - 1] * 0.10, 2)
                     tupledPrice = f"{priceCalculation:,}"
                     print(f"Total amount: PHP", tupledPrice)
                     print("<=====RECEIPT=====>\n")
                 elif carBrand == 3: #aurelio 
                     print("\n<=====RECEIPT=====>")
                     print("Chosen your car: Aurelio " + aureliosCars[carChosen - 1])
-                    priceCalculation = round(aureliosCarsPrice[carChosen - 1] * 0.9, 2)
+                    priceCalculation = round(aureliosCarsPrice[carChosen - 1] * 0.10, 2)
                     tupledPrice = f"{priceCalculation:,}"
                     print(f"Total amount: PHP", tupledPrice)
                     print("<=====RECEIPT=====>\n")
                 elif carBrand == 4: #Ford 
                     print("\n<=====RECEIPT=====>")
                     print("Chosen your car: Ford " + fordCars[carChosen - 1])
-                    priceCalculation = round(fordCarsPrice[carChosen - 1] * 0.9, 2)
+                    priceCalculation = round(fordCarsPrice[carChosen - 1] * 0.10, 2)
                     tupledPrice = f"{priceCalculation:,}"
                     print(f"Total amount: PHP", tupledPrice)
                     print("<=====RECEIPT=====>\n")
                 elif carBrand == 5: #Mitsubishi 
                     print("\n<=====RECEIPT=====>")
                     print("Chosen your car: Mitsubishi " + MitsubishiCars[carChosen - 1])
-                    priceCalculation = round(MitsubishiCarsPrice[carChosen - 1] * 0.9, 2)
+                    priceCalculation = round(MitsubishiCarsPrice[carChosen - 1] * 0.10, 2)
                     tupledPrice = f"{priceCalculation:,}"
                     print(f"Total amount: PHP", tupledPrice)
                     print("<=====RECEIPT=====>\n")
